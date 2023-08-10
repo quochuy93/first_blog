@@ -1,0 +1,290 @@
+.main {
+    margin: 0rem 12rem 0 12rem;
+    padding-top: 3rem;
+    background-color: #fafafa;
+    .body {
+        background-color: #e4e4e4;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        border: 0.5px solid #a9a8ac;
+        display: flex;
+        &-left {
+            flex: 2;
+            margin: 0 2rem;
+
+            background-color: #fafafa;
+
+            &-cover {
+                padding: 0rem 1rem 0.5rem;
+                background-color: #e4e4e4;
+                .story {
+                    margin-bottom: 2rem;
+                    background-color: #f6f6f7;
+                    padding: 3rem 2rem 0 2rem;
+                    &-name {
+                        text-align: center;
+                        font-size: 3rem;
+                        line-height: 3rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        padding-bottom: 2rem;
+                    }
+
+                    &-desciption {
+                        text-align: center;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        padding-bottom: 2rem;
+                        font-size: 1.6rem;
+                        &-date {
+                            color: #a9a8ac;
+                        }
+                    }
+
+                    img {
+                        padding-bottom: 3rem;
+                    }
+
+                    &-detail {
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        padding-bottom: 1rem;
+                        &-signature {
+                            font-weight: 600;
+                        }
+
+                        p {
+                            font-weight: 100;
+                        }
+                    }
+
+                    .reply {
+                        display: flex;
+                        gap: 10rem;
+                        margin-top: 3rem;
+                        img {
+                            width: 9rem;
+                            height: 11rem;
+                        }
+
+                        .replier {
+                            padding-top: 1rem;
+                            &-name {
+                                font-weight: 600;
+                                margin-bottom: 1rem;
+                                &-date {
+                                    font-weight: 100;
+                                    font-size: 1.4rem;
+                                    color: #a9a8ac;
+                                }
+                            }
+
+                            &-detail {
+                                font-size: 1.4rem;
+                                color: #4f4f4f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-right {
+            flex: 1;
+            margin-right: 2rem;
+            .avatar {
+                position: relative;
+                margin-bottom: 4rem;
+
+                &-word {
+                    z-index: 100;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 0 2.5rem 0 2rem;
+                    .name {
+                        text-transform: capitalize;
+                        padding-bottom: 1.5rem;
+                    }
+
+                    .description {
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .popular {
+                margin-bottom: 3rem;
+                &-row {
+                    display: flex;
+                    gap: 2rem;
+                    background-color: #fafafa;
+                    line-height: 2.2rem;
+                    padding: 1.5rem 1rem 0.6rem 1.7rem;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #a9a8ac;
+                    }
+                    img {
+                        width: 6rem;
+                        height: 7rem;
+                    }
+
+                    &-word {
+                        padding-top: 1rem;
+                        &-name {
+                            font-size: 1.4rem;
+                        }
+
+                        &-description {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            .advertise {
+                margin-bottom: 3rem;
+                &-wrap {
+                    background-color: #fafafa;
+                    padding: 2rem;
+                    &-image {
+                        background-color: #e4e4e4;
+                        height: 20rem;
+                        text-align: center;
+                        line-height: 20rem;
+                    }
+                }
+            }
+
+            .tag {
+                &-space {
+                    background-color: #fafafa;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.3rem;
+                    font-size: 1.1rem;
+                    padding: 1rem 1rem 2rem 2rem;
+                    text-transform: capitalize;
+                    line-height: 1.2rem;
+                    &-detail1 {
+                        padding: 0.5rem 0.8rem;
+                        margin-bottom: 0.7rem;
+                    }
+
+                    &-detail2 {
+                        padding: 0.4rem 0.8rem;
+                        background-color: #e4e4e4;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .inspiration {
+                margin-bottom: 3rem;
+                &-image {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: 1.5rem;
+                    background-color: #fafafa;
+                    padding: 1.5rem;
+                    img {
+                        height: 15rem;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .follow {
+                &-icon {
+                    padding: 1rem 1rem 1rem 2rem;
+                    background-color: #fafafa;
+                    a i {
+                        color: black;
+                        font-size: 2rem;
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 50%;
+                        }
+                    }
+                }
+            }
+
+            .subcribe {
+                .email {
+                    background-color: #fafafa;
+                    padding: 1rem 1rem 1rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    &-word {
+                        font-size: 1.1rem;
+                    }
+
+                    &-space {
+                        width: 100%;
+                        font-size: 1.1rem;
+                        padding-left: 1rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    &-btn {
+                        background-color: rgb(254, 41, 41);
+                        text-transform: capitalize;
+                        color: white;
+                        &:hover {
+                            cursor: pointer;
+                            color: black;
+                            background-color: #c6c5c5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.story-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+    &-like {
+        background-color: transparent;
+        border: 0.5px solid black;
+        padding: 1rem 1.2rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        &:hover {
+            cursor: pointer;
+            background-color: #a9a8ac;
+        }
+    }
+
+    &-reply {
+        padding: 1rem 1.2rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            background-color: #a9a8ac;
+            color: black;
+        }
+        span {
+            background-color: white;
+            padding: 0.3rem 0.5rem;
+            color: black;
+        }
+    }
+}
+
+.right {
+    height: 5rem;
+    line-height: 5rem;
+    padding-left: 2rem;
+    text-transform: capitalize;
+}
